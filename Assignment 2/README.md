@@ -33,7 +33,7 @@ cd Rooba finance Assignments/Assignment 2
   npm run dev
 ```
 ## 💻 Demo
-[Assignment-1](https://rooba-finance-assignment-2.netlify.app/)
+[Assignment-2](https://rooba-finance-assignment-2.netlify.app/)
 
 <div align="center">Made with ❤️</div>
 
