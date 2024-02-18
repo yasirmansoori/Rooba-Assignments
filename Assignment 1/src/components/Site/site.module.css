@@ -1,0 +1,139 @@
+.site {
+  overflow-y: scroll;
+}
+
+.content {
+  padding: 3rem;
+  padding-bottom: 1rem;
+}
+
+.details, .overview {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #eaeaea;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.detailsLeft, .overviewLeft {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.detailsRight {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 1rem;
+}
+
+.overviewRight {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  overflow-y: scroll;
+  max-height: 290px;
+}
+
+.holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  max-width: 340px;
+}
+
+.stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  max-width: 400px;
+}
+
+.stats>.mark {
+  background-color: #fff;
+}
+
+.mark {
+  color: gray;
+  background-color: #CCCCCC;
+  border-radius: 0;
+}
+
+.step {
+  border: 1px solid #eaeaea;
+  padding: 1rem;
+}
+
+.landmarks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+
+@media screen and (max-width: 768px) {
+  .content {
+    padding: 1rem;
+  }
+
+  .details {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .overview {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+
+  .overviewLeft, .overviewRight, .detailsLeft, .detailsRight {
+    border: 1px solid #eaeaea;
+  }
+
+  .overviewRight {
+    max-height: 100px;
+    overflow-y: scroll;
+  }
+
+  .detailsLeft, .detailsRight {
+    border: 1px solid #eaeaea;
+  }
+
+  .holder {
+    max-width: 100%;
+  }
+
+  .stats {
+    font-size: small;
+  }
+
+  .stats>span {
+    font-size: smaller;
+  }
+}
